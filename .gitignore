@@ -1,0 +1,7 @@
+*~
+*.pyc
+*.swp
+*.jhist
+\#*#
+tez_hist
+tez-history

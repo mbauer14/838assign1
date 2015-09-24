@@ -1,0 +1,17 @@
+digraph {
+    "HDFS stage 1:"-> "stage 1: num_mappers 82"; 
+    "stage 1: num_mappers 82" -> "stage 1: num_reducers 86"; 
+    "stage 1: num_reducers 86" -> "HDFS stage 17:"; 
+    "HDFS stage 17:" -> "stage 17: num_mappers 4"; 
+    "stage 17: num_mappers 4" -> "HDFS stage 14:"; 
+    "HDFS stage 14:" -> "stage 14: num_mappers 5"; 
+    "stage 14: num_mappers 5" -> "HDFS stage 11:"; 
+    "HDFS stage 11:" -> "stage 11: num_mappers 6"; 
+    "stage 11: num_mappers 6" -> "HDFS stage 5:"; 
+    "HDFS stage 5:"-> "stage 5: num_mappers 2"; 
+    "stage 5: num_mappers 2" -> "stage 5: num_reducers 1"; 
+    "stage 5: num_reducers 1" -> "HDFS stage 6:"; 
+    "HDFS stage 6:"-> "stage 6: num_mappers 1"; 
+    "stage 6: num_mappers 1" -> "stage 6: num_reducers 1"; 
+    "stage 6: num_reducers 1" -> "HDFS"; 
+}
